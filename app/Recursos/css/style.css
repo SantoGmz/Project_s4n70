@@ -83,3 +83,15 @@ p{
     color: white;
 }
 
+i{
+    color: white;
+}
+
+.exit{
+    color:rgb(175, 0, 0);
+}
+
+.exit:hover{
+    color:red;
+}
+

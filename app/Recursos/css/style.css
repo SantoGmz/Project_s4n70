@@ -1,0 +1,85 @@
+
+//COLORES
+.PRUEBA_DE_COLORES{
+
+color:
+#03528D
+/*BOTON COLOR*/
+#007BFF
+}
+
+* {
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    font-family: 'Lobster', cursive; 
+   /* font-family: 'Libre Baskerville', serif;  */
+
+}
+
+h1{
+    font-size: 25px;
+    text-align: center;
+    color: #03528D;
+}
+
+
+
+/* Centrar todo*/
+#login {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+body{
+    background: black;
+    color: white;
+
+
+}
+
+h1,h2,h3,h4 {
+    color: white;
+}
+
+
+body a[title] {
+    display: none;
+}
+
+.col-md-4, .col-md-6, .col-md-12{
+    padding: 30px;
+    margin:9px;
+    border-radius: 15px;
+    background: transparent;
+    color: black;
+    border: solid 1px #007BFF ;
+
+}
+
+/*lABEL*/
+.saw7{
+    width: 100%;
+    color: white;
+    margin: 7px;
+    padding: 3px;
+    border: solid 1px red;
+    background: transparent;
+    outline: none;
+    height: 33px;
+    transition: all ease 0.5s;
+    border-radius: 3px;    
+
+}
+
+.saw7{
+    color: #007BFF;
+    border: 1px solid #007BFF;
+}
+
+p{
+    color: white;
+}
+

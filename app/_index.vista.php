@@ -1,20 +1,46 @@
-<body>
+<?php
+require "app/recursos/head.php";
+?>
+
+<body >
+
+
+    <!--contenedor-->
     <div class="container">
-        <div class="row">
-            <div class="col-xs-4">
-                <h1>Hola Mundo</h1>
-                    <p>
-                    
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Possimus ipsa, iusto error eos fuga quis illum quaerat animi 
-                        optio sit. Reprehenderit blanditiis earum sequi rerum perspiciatis, 
-                        eligendi illum ullam quaerat.
-                        <button class="btn-primary" >Boton</button>
-                    </p>
+        <!--col-4-->
+        <div id="login" class="row">
+            <div class="col-md-4">
+            
+                <!--Formulario-->
+                <form action="" method="POST" autocomplete="off">
+                   
+                    <h3>Iniciar sesion</h3>
+                    <hr color="#007BFF">
+                    <input type="text" name="inputUser" autofocus class="saw7" placeholder="Nombre de usuario" required>
+                    <input type="password" name="passwd" class="saw7" placeholder="Contraseña" required>
+                    <br>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar Sesion</button>
+                    <br>
+                    <em class="text-danger"><?php
+                        if(isset($mensajesError['usuario_incorrecto'])){
+                        echo $mensajesError['usuario_incorrecto'];
+                        }
+                        ?>
+                    </em>
+                    <br>
+                   <!-- <span class="otherPregunte">Aun no te has registrado? <a href="registro.php" class="otherPregunte">Registrarme</a></span> -->
+                </form>
+                
             </div>
         </div>
-    </div>
+    </div> 
 
-<?php require("app/script.php");?>
+
+
+
+<!-- librerias-->
+
+<!-- /librerias -->
 </body>
+
 </html>
